@@ -12,7 +12,7 @@ ls -al
 
 echo "looping thru all files with extention .tif"
 for i in `find . -name "*.tif" -type f`; do
-    echo "I do something with the file $i"
+    echo "getting date value for the file $i"
     year=$(echo $i | cut -d"_" -f3 | cut -d"." -f1); echo $year
     month=$(echo $i | cut -d"_" -f3 | cut -d"." -f2); echo $month
     day=$(echo $i | cut -d"_" -f3 | cut -d"." -f3); echo $day 	
